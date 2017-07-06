@@ -14,14 +14,12 @@ class MyTestClass(BaseCase):
 
 
 
-for i in los:
-   stocksite = url +i + '?q=' +i 
-   print(stocksite)
-   with contextlib.closing(webdriver.PhantomJS(Phantom_Path)) as driver:
-   #with contextlib.closing(webdriver.Phantom_Path)) as driver:    
-       driver.get(stocksite) 
-       driver.find_element_by_id('sentiment-tab').click()
-       Bullish = driver.find_elements_by_css_selector('span.bullish:nth-child(1)')
-       Sentiment =  [x.text for x in Bullish]
-       los2.append(Sentiment[0])
+#for i in los:
+  # stocksite = url +i + '?q=' +i 
+   
+       #driver.get(stocksite) 
+       #driver.find_element_by_id('sentiment-tab').click()
+       #Bullish = driver.find_elements_by_css_selector('span.bullish:nth-child(1)')
+       #Sentiment =  [x.text for x in Bullish]
+       #los2.append(Sentiment[0])
        
