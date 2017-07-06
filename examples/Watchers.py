@@ -1,7 +1,7 @@
 
 los = []
 url = 'https://stocktwits.com/symbol/'
-workbook = openpyxl.load_workbook('Spreadsheet.xlsx')
+workbook = openpyxl.load_workbook('NYQ.xlsx')
 worksheet = workbook.get_sheet_by_name(name = 'Sheet1') 
 for col in worksheet['A']:
     los.append(col.value)
