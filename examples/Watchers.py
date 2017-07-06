@@ -37,5 +37,5 @@ class MyTestClass(BaseCase):
     def test_basic(self):
         self.open('https://stocktwits.com/symbol/CYTR?q=cytr')            # Navigate to the web page
       
-    def get_text('<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>')
+    def self.get_text('<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>')
                  
