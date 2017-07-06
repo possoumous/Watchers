@@ -5,8 +5,8 @@ class MyTestClass(BaseCase):
 
     def test_basic(self):
         self.open('https://stocktwits.com/symbol/CYTR?q=cytr')            # Navigate to the web page
-        self.assert_element(<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>)       # Assert element on page
-        self.get_text(<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>)                  # Click element on page
+       # self.assert_element(<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>)       # Assert element on page
+        #self.get_text(<a class="watchers-top" href="/symbol/CYTR/watchers"> 17,379 Watchers </a>)                  # Click element on page
         
      def get_text(self, '#two-col-side > a', by=By.CSS_SELECTOR,
                  timeout=settings.SMALL_TIMEOUT):
