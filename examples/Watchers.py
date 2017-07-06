@@ -1,5 +1,6 @@
 Import openpyxl
-Import 
+from seleniumbase import BaseCase
+
 los = []
 url = 'https://stocktwits.com/symbol/'
 workbook = openpyxl.load_workbook('Test.xlsx')
@@ -8,6 +9,9 @@ for col in worksheet['A']:
     los.append(col.value)
 los2 = []
 print(los)
+
+class MyTestClass(BaseCase):
+
 
 
 for i in los:
