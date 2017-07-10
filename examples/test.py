@@ -9,5 +9,5 @@ class MyTestClass(BaseCase):
        # Click on link with the text
         self.assert_text('a.watchers-top:nth-child(3)')
         header_text = self.get_text('a.watchers-top:nth-child(3)')   # Grab text from page element
-        return header_text
+        print header_text
         
