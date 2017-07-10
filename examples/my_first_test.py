@@ -1,5 +1,5 @@
 from seleniumbase import BaseCase
-
+print "hello"
 
 class MyTestClass(BaseCase):
 
