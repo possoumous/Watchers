@@ -15,7 +15,7 @@ class MyTestClass(BaseCase):
         self.click_link_text('Blag')              # Click on link with the text
         self.assert_text('xkcd', '#site-title')
         header_text = self.get_text('header h2')   # Grab text from page element
-        print(header_text)
+        print header_text
         self.assertTrue('The blag of the webcomic' in header_text)
         self.update_text('input#s', 'Robots!\n')  # Fill in field with the text
         self.assert_text('Hooray robots!', '#content')
