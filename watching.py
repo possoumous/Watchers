@@ -23,5 +23,5 @@ with contextlib.closing(webdriver.Chrome()) as driver:
         driver.get(stocksite)   
         Watchers = driver.find_elements_by_css_selector('a.watchers-top:nth-child(3)')
         Sentiment =  [x.text for x in Watchers]
-
+print(Sentiment)
 #test
