@@ -2,13 +2,6 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 import openpyxl
 
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
-
-chrome_options = Options()
-chrome_options.add_argument('--dns-prefetch-disable')
-driver = Chrome(chrome_options=chrome_options)
-
 display = Display(visible=0, size=(800, 600))
 display.start()
 
@@ -28,7 +21,7 @@ for i in los:
    stocksite = url +i + '?q=' +i 
    print(stocksite)
    driver.get(stocksite) 
-   Watchers = driver.find_elements_by_css_selector('a.watchers-top:nth-child(3)').text
+   Watchers = driver.find_elements_by_css_selector('a.watchers-top:nth-child(3)')
    Sentiment =  [x.text for x in Watchers]
 
 #test
