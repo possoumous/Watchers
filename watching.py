@@ -2,6 +2,13 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 import openpyxl
 
+from selenium.webdriver import Chrome
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+chrome_options.add_argument('--dns-prefetch-disable')
+driver = Chrome(chrome_options=chrome_options)
+
 display = Display(visible=0, size=(800, 600))
 display.start()
 
