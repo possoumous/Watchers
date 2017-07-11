@@ -17,7 +17,7 @@ for col in worksheet['A']:
 
 print(los)
 
-filename = "Watching_Nasdaq"
+filename = "Watching_Nasdaq.csv"
 f = open(filename, "w")
 
 with contextlib.closing(webdriver.Chrome()) as driver:
