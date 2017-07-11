@@ -17,6 +17,9 @@ for col in worksheet['A']:
 
 print(los)
 
+filename = "Watching_Nasdaq"
+f = open(filename, "w")
+
 with contextlib.closing(webdriver.Chrome()) as driver:
     for i in los:
         stocksite = url +i + '?q=' +i 
@@ -27,6 +30,7 @@ with contextlib.closing(webdriver.Chrome()) as driver:
         for i in los2:
             los2[j]=i.rstrip("WATCHERS")
             j+=1
-        los2.append(Watching[0])
+         f.write(Watching[0] + ',,,,')
+        #los2.append(Watching[0])
 print(los2)
 #test
