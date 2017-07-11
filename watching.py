@@ -30,7 +30,7 @@ with contextlib.closing(webdriver.Chrome()) as driver:
         for i in los2:
             los2[j]=i.rstrip("WATCHERS")
             j+=1
-        print(Watching)        
+        print(Watching[0]        
         f.write(Watching[0] + ',,,,')
         #los2.append(Watching[0])
 print(los2)
