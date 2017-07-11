@@ -16,7 +16,7 @@ for col in worksheet['A']:
 
 print(los)
 
-with contextlib.closing(webdriver.Chrome() as driver:
+with contextlib.closing(webdriver.Chrome()) as driver:
     for i in los:
         stocksite = url +i + '?q=' +i 
         print(stocksite)
